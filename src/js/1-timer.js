@@ -17,7 +17,7 @@ const seconds = document.querySelector('[data-seconds]');
 let time = null;
 
 let userSelectedDate = null;
-btnTimerEl.setAttribute('disabled', '');
+timerBtnEl.setAttribute('disabled', '');
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -29,7 +29,7 @@ const options = {
 
     if (userSelectedDate < time) {
       iziToast.error({
-        message: 'Невірна дата, оберіть дату в майбутньому',
+        message: 'Введіть дату в майбутньому',
         position: 'topRight',
       });
       timerBtnEl.setAttribute('disabled', '');
