@@ -57,7 +57,7 @@ timerBtnEl.addEventListener('click', () => {
     userSelectedDate,
     time
   );
-  //
+
   timerBtnEl.setAttribute('disabled', '');
   timeDataEl.setAttribute('disabled', '');
 });
